@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        main,footer{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+          
+        }
+        article{
+            background-color: chartreuse;
+            margin: 5px;
+        }
+        p{
+            background-color: gold;
+            margin: 2px;
+        }
+        
+        .big{
+            flex-grow: 2;
+            background-color: aquamarine;
+        }
+        .small{
+            flex: 1;
+            background-color: darkmagenta;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <article class="big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi perspiciatis, ut numquam quam expedita quae deleniti. Et perferendis consequuntur quo! Maiores temporibus voluptatibus qui officiis aperiam? Perspiciatis earum hic deleniti!</article>
+        <article class="small">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius voluptatem consequuntur ad in! Consectetur labore, perferendis earum repellendus fuga assumenda dolorem illo reprehenderit recusandae officiis atque quaerat voluptatum similique commodi?</article>
+        <article class="small">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus consectetur culpa? Veritatis iure assumenda ab, ducimus itaque ut. Consequatur incidunt minima aliquid repudiandae reprehenderit dolor obcaecati tenetur, totam sunt?</article>
+    </main>
+
+    <table style="border:1rem solid;">
+        <tr>
+            <td>student</td>
+            <td>fname</td>
+            <td>laname</td>
+            <td>city</td>
+        </tr>
+        <tr>
+            <td>123</td>
+            <td>Lotta</td>
+            <td>saaristo</td>
+            <td>Helsinki</td>
+        </tr>
+    </table>
+
+    <h2>Example of a form</h2>
+
+    <form method="post" action="process.php">
+        Name: <input type="text" name="fName" required minlength="1" ><br>
+        Email ID: <input type="email" name="email" ><br>
+        DOB: <input type="date" name="dob"><br>
+        Message: <input type="text" name="Message"><br>
+        <button type="submit">submit</button><br>
+        <button type="reset">reset</button>
+
+
+    </form>
+    <footer>
+        <p class="big">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur asperiores in, rerum dignissimos sunt impedit aliquid nulla, quaerat magnam, inventor</p>
+        <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quas autem laudantium odio, quod voluptatum? Esse reiciendis con</p>
+    </footer>
+
+</body>
+</html>
