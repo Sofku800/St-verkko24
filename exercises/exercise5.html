@@ -6,38 +6,25 @@
     <title>Exercise 5: HTML Layout</title>
 
     <style>
-        header,footer{
-            background-color: blueviolet;
-            color: aliceblue;
-            padding: 5px;
-            text-align: center;
-        }
-        
-        main{
-            display: flex;
-            
-        }
-        .menu{
-            display: flex;
-            width: 150px;
-            margin: 5px;
-            
-            
+        body{
+    margin:0 auto;
+    max-width: 80%;
+}
 
+.container{
+    display: flex;
+    justify-content: center;
+}
+aside ul{
+    list-style-type: none;
+}
+
+aside ul p{
+    display: inline;
+    font-size: 25px;
+}
         
-        }
-        
-        nav.info{
-            display: flex;
-            flex-direction: column;
-            
-        }
-        div{
-            background-color: aqua;
-            margin: 4px;
-            padding: 15px;
-        }
-       
+
         
         
     </style>
@@ -47,21 +34,27 @@
     <header>
         <h1>Flex Box Examples</h1>
     </header>
-    <main>
-    <strong><aside class="menu">
-           <ul><p>side bar</p>
-            <p>side bar</p>
-            <p>side bar</p>
-            <p>side bar</p>
-            <p>side bar</p>
-            <p>side bar</p></ul> 
-        </aside></strong> 
+    <main class="container">
+
+        <aside>
+            <ul>
+                <p><strong>side bar</strong></p>
+                <p><strong>side bar</strong></p>
+                <p><strong>side bar</strong></p>
+                <p><strong>side bar</strong></p>
+                <p><strong>side bar</strong></p>
+                <p><strong>side bar</strong></p>
+            </ul> 
+        </aside> 
     
-        <nav class="info">
-            <div ><strong>What is HTML</strong> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus magni, blanditiis repudiandae esse animi dignissimos necessitatibus dolores voluptatibus maiores eos mollitia. Aut unde amet architecto optio cumque soluta in ratione</p></div>
-            <div ><strong>HTML Elements</strong> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat veniam quos distinctio assumenda laudantium quaerat, praesentium delectus. Odit nam totam amet quo maiores. Accusamus soluta quos molestias unde! Reprehenderit, sint.</p></div>
-            <div ><strong>Block Level Elements</strong> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam neque quas nostrum modi architecto libero repellendus. Vitae placeat, soluta corporis ut commodi iste natus repellat labore harum totam animi!</p></div>
-        </nav>
+        <div>
+            <article><strong>What is HTML</strong> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus magni, blanditiis repudiandae esse animi dignissimos necessitatibus dolores voluptatibus maiores eos mollitia. Aut unde amet architecto optio cumque soluta in ratione</p></article>
+            
+            <article><strong>HTML Elements</strong> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat veniam quos distinctio assumenda laudantium quaerat, praesentium delectus. Odit nam totam amet quo maiores. Accusamus soluta quos molestias unde! Reprehenderit, sint.</p></article>
+    
+            <article><strong>Block Level Elements</strong> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quam neque quas nostrum modi architecto libero repellendus. Vitae placeat, soluta corporis ut commodi iste natus repellat labore harum totam animi!</p></article>
+        </div>
+
     </main>
 
     <footer>
