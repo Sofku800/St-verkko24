@@ -1,0 +1,30 @@
+header, footer{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 10px;
+}
+
+
+main{
+    display: flex;
+    margin: 5px;
+    
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    
+ 
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    
+}
+article{
+    background-color: aqua;
+    margin: 5px;
+    padding: 20px;
+}
